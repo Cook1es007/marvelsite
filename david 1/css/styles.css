@@ -1,0 +1,190 @@
+html {
+  cursor: url('../img/hand_icon.png'), auto;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    float: right;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: url('../img/hand_icon.png'), auto;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: url('../img/hand_icon.png'), auto;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  body {
+    background-image: url('../img/mosaic.png');
+    background-attachment: fixed;
+    background-color: #464646;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    cursor: url('../img/hand_icon.png'), auto;
+  }
+
+  section {position: static;}
+
+  section#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    background-color: #333;
+    z-index: 99999;
+    box-shadow: 0 10px 15px 8px rgba(13, 13, 13, 0.8);
+  }
+
+  #logo a {
+    position: absolute;
+    float:left;
+    top:15px;
+    left:30px;
+    box-shadow: 0 2px 10px 7px rgba(13, 13, 13, 0.7);;
+    height: 58px;
+    overflow-y: hidden;
+    cursor: url('../img/hand_icon.png'), auto;
+  }
+
+  menu {
+    position: sticky;
+    width:100%;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+  }
+
+
+  section#home {
+    margin: 48px 0 -48px 0;
+    z-index: 0;
+  }
+
+  section#works {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    margin: 48px 0 -48px 0;
+    z-index: -1;
+  }
+
+  .bto {
+    display: none;
+    z-index: 99999999 !important;
+    cursor: url('../img/hand_icon.png'), auto;
+    position:sticky;
+    bottom: 345px;
+    left: 220px;
+    width: 125px;
+    height: 40px;
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+    background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color:#fe1a00;
+    border-radius:6px;
+    border:1px solid #d83526;
+    color:#ffffff;
+    font-size:80%;
+    font-weight:bold;
+    padding:6px 14px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+  }
+
+  #galleryCoontainer {
+    position: static;
+    width: 100%;
+    color: white;
+  }
+
+  .imageGalery {
+    width: 25%;
+    float: left;
+    padding:0;
+    margin:0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .zoomHover { 
+    transition: all .3s ease-in-out; }
+
+  .zoomHover:hover {
+      transform: scale(1.1);
+  }
+
+  img#cropped1:hover + #bto1{
+      display:inline-block;
+  }
+
+  .imageGalery:hover{
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    background-color: #ccc;
+    -moz-box-shadow: 0 0 0 20px #000;
+    -webkit-box-shadow: 0 0 0 20px #000;
+    box-shadow: 0 0 35px 20px #000;
+  }
+
+  #cropped1 {
+    margin: 48px 0 0 0;
+  }
+
+  #cropped2 {
+    margin: 48px 0 0 -100%;
+  }
+
+  #cropped3 {
+    margin: 48px 0 0 -200%;
+  }
+
+  #cropped4 {
+    margin: 48px 0 0 -300%;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    height: 48px;
+    text-align: center;
+    width: 100%;
+    color: #ddd;
+    background-color: #333;
+    font-size: 75%;
+    z-index: 99999;
+    font-weight: 400;
+    box-shadow: 0 -10px 15px 5px rgba(13, 13, 13, 0.8);
+    cursor: url('../img/hand_icon.png'), auto;
+  }
+
+  #footer div {
+    margin-top:18px;
+    cursor: url('../img/hand_icon.png'), auto;
+  }
